@@ -5,7 +5,7 @@
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/leoriviera/@voxasoftworks/dvla-vehicle-enquiry",
+  "repository": "https://github.com/voxa/dvla-vehicle-enquiry",
   "license": "MIT",
   "keywords": [],
   "scripts": {
@@ -41,7 +41,10 @@
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^1.2.1",
+    "dotenv": "^16.0.3"
+  },
   "devDependencies": {
     "@ava/typescript": "^1.1.1",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
@@ -85,6 +88,9 @@
     },
     "files": [
       "!build/module/**"
+    ],
+    "require": [
+      "dotenv/config"
     ]
   },
   "config": {
